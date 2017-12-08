@@ -4,13 +4,13 @@ Feature: Notification Center
     I want to be able to define events that trigger notifications
     And their corresponding means of notifying users
 
-    1. Scenario: Admin approve a Talent registration
+    Scenario: 1. Admin approve a Talent registration
         Given Approval requires notifying the Talent by an email and a push notification
         When The Admin approve the Talent's registration
         Then A request should be sent to the Api
         And The Talent should receive an email and a push notification communicating approval
 
-    2. Scenario: A Talent registers
+    Scenario: 2. A Talent registers
         Given Registration requires notifying the Talent by email
         When The Talent register
         Then A request should be sent to the Api
